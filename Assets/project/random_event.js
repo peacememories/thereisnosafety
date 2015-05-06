@@ -11,7 +11,7 @@ var Events : String[] = [
 function Start () 
 {
 	EventText = GameObject.Find("Canvas").GetComponentsInChildren(UnityEngine.UI.Text)[0];
-	InvokeRepeating("DisplayEvent", 5, 5);
+	InvokeRepeating("DisplayEvent", 1, 5);
 }
 
 function DisplayEvent() 
