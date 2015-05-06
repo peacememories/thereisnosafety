@@ -52,6 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d123ff4864a6445dfb27568d220c073b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 180998, guid: ab136b9634db87e45a891dc03ebe3435, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
