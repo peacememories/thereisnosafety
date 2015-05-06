@@ -16,6 +16,11 @@ function Arrived(other: GameObject) {
 	}
 }
 
+function OnMouseDown() {
+	//Insert flavour text here
+	Delete();
+}
+
 function Delete() {
 	Destroy(this.gameObject);
 }
