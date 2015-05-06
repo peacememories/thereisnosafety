@@ -4,6 +4,7 @@ class Agent extends UnityEngine.MonoBehaviour
 {
 	private var gameScript: GameScript;
 	private var target: GameObject;
+	private var score: UnityEngine.UI.Text;
 	
 	function Start () 
 	{
@@ -15,6 +16,7 @@ class Agent extends UnityEngine.MonoBehaviour
 		var agent: NavMeshAgent = GetComponent.<NavMeshAgent>();
 		agent.SetDestination(target.transform.position);
 		agent.speed = Random.Range(1.0, 3.0);
+		score = GameObject.Find("Canvas").GetComponentsInChildren(UnityEngine.UI.Text)[1];
 	}
 
 	function Arrived(other: GameObject) {
@@ -24,7 +26,10 @@ class Agent extends UnityEngine.MonoBehaviour
 	}
 
 	function OnMouseDown() {
-		//Insert flavour text here
+		var newScore = parseInt(score.text) - 1;
+		score.color = Color.red;
+		score.text = "" + newScore;
+		
 		Delete();
 	}
 
