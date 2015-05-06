@@ -734,9 +734,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventText: {fileID: 0}
   Events:
-  - Carbomb
-  - Kidnapping
-  - more..
+  - A carbomb exploded! 5 dead, 20 injured
+  - An Austrian tourist group kidnapped!
+  - Airplane hijacked!
+  - Attack on military base
+  - Explosion in school
+  - Suicide bombing at a store
+  - Attack on newspaper office
+  - 28 people killed in terror attack
+  - Prime Minister assassinated!
+  - Attack on synagogue
 --- !u!4 &980185097
 Transform:
   m_ObjectHideFlags: 0
